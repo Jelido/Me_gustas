@@ -1,0 +1,116 @@
+
+:root {
+    --color-primario: #201d22;
+    --color-secundario: #ff0000;
+    --fondo: #eee;
+    --texto: #0c1112;
+    --blanco: rgba(255, 255, 255, 0.7);
+}
+
+html {
+    background: linear-gradient(135deg, #e0c3fc, #672adf 100%);
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    margin: 0;
+    color: var(--texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-primario);
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--color-secundario);
+    border-left: 5px solid var(--color-primario);
+    border-bottom: 5px solid var(--color-primario);
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #444;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+ul {
+    background: #ffffff88;
+    backdrop-filter: blur(10px);
+    padding: 20px 12px;
+    border: 1px solid #ffffff4d;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 #331471;
+    list-style: none;
+}
+
+ul li {
+    font-weight: 700;
+    color: var(--color-primario);
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+ul p {
+    font-weight: 400;
+    color: #636e72;
+    font-size: 0.95rem;
+    margin: 0 5px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.boton-navegacion {
+    height: auto;
+    width: 200px;
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: var(--fondo);
+    color: var(--color-primario) !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.3);
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.boton-navegacion:hover {
+    background-color: var(--color-secundario);
+    color: white !important;
+    box-shadow: 0 6px 20px rgba(255, 101, 132, 0.4);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
